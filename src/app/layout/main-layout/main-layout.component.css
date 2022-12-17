@@ -1,0 +1,10 @@
+.nav{
+    background-color: white;
+}
+.mat-drawer-container {
+    background-color: white;
+
+}
+mat-drawer-content.mat-drawer-content.body{
+ margin-left: 20% !important;
+}

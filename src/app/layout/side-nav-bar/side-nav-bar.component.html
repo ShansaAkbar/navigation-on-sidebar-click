@@ -1,0 +1,5 @@
+<mat-list *ngFor="let i of peopledata">
+    <a [routerLink]="['/profile',i.id]"> <mat-list-item style="cursor: pointer;color:black"
+            (click)="navigateToProfile(i)" [routerLinkActive]="['is-active']">{{i.userName}}</mat-list-item>
+    </a>
+</mat-list>

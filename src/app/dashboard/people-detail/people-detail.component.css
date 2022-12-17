@@ -1,0 +1,73 @@
+* {
+    background-image: url('../../../assets/blue-round.png'), url('../../../assets/wiggle-yellow.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left bottom, right center;
+    background-size: 100px 80px;
+
+}
+
+.main {
+    height: 100%;
+    margin: 20px;
+    overflow: hidden
+}
+
+.child {
+    width: 96%;
+    height: 96vh;
+    margin-left: 3rem;
+    position: absolute;
+    top: 1rem;
+    border-radius: 2rem;
+}
+
+.links {
+    margin-left: 14px;
+}
+
+.header {
+    margin-left: 4rem;
+    color: white;
+}
+
+.details {
+    margin: 4rem;
+    text-decoration: underline;
+    color: white;
+}
+
+.social {
+    margin: 4rem;
+    color: white;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.designation {
+    color: #cbc6c6
+}
+span#amount-raised {
+    background: white;
+    border-radius: 30px;
+    z-index: 1;
+    font-size: 26px;
+    letter-spacing: 3px;
+    color: lightgray;
+    height: 52px;
+    width: 52px;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    padding-right: 4px;
+}
+span#amount-raised:before {
+  content: '';
+  top: 0; left: 0;
+  z-index: -1;
+  height: 100%; width: 100%;
+}

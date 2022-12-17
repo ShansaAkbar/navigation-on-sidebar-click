@@ -1,1 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.mat-icon {
+    background-repeat: no-repeat;
+    display: inline-block;
+    fill: currentColor;
+    height: 24px;
+    width: 24px;
+    background-color: #d3d3d35e;
+    border-radius: 10px;
+}
+.mat-form-field-underline {
+    position: absolute;
+    width: 0% !important;
+    pointer-events: none;
+    transform: scale3d(1, 1.0001, 1);
+}
+.mat-form-field-appearance-legacy .mat-form-field-underline {
+    height: 0px;
+}
+.mat-card .mat-divider-horizontal {
+    position: absolute;
+    left: 0;
+    /* width: 80%; */
+    margin-right: 56px;
+    text-align: center;
+    margin-left: 56px;
+}
+.mat-form-field-appearance-legacy .mat-form-field-wrapper {
+    padding-bottom: 1.25em;
+    padding-left: 15px;
+}
+
+.mat-h2, .mat-title, .mat-typography h2 {
+    font: 500 20px/32px Roboto, "Helvetica Neue", sans-serif;
+    margin: 0px 0 4px;
+}
+mat-drawer.mat-drawer.ng-tns-c33-0.ng-trigger.ng-trigger-transform.mat-drawer-side.mat-drawer-opened.ng-star-inserted {
+    background: white !important;
+    columns: black !important;
+}
+mat-drawer-content.mat-drawer-content{
+    background-color: white;
+}

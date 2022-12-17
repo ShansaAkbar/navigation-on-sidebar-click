@@ -1,0 +1,98 @@
+<div class="main">
+    <mat-card style=" border-radius: 31px; height: 100%;">
+
+        <form [formGroup]="form" (keydown)="onSubmit($event)">
+            <div class="header">
+                <div class="row">
+                    <div class="col-md-1">
+                        <span id="amount-raised">{{imageName}}</span>
+                        <!-- <img src="../../../assets/{{form.value.userImage}}" style="height: 60px; width:60px"> -->
+                    </div>
+                    <div class="col-md-6">
+                        <h2>{{form.value.userName}}</h2>
+                        <h3 class="designation">{{form.value.designation}}</h3>
+                    </div>
+                </div>
+            </div>
+            <mat-divider></mat-divider>
+            <!-- <mat-card> -->
+            <div class="details">
+                <h3>Personal Info</h3>
+                <div class="row">
+                    <div class="col-md-10">
+                        <div class="col-md-6 d-flex flex-row bd-highlight">
+                            <mat-icon class="mat-icon-rtl-mirror" svgIcon="email"></mat-icon>
+                            <!-- <h4>{{form.value.email}}</h4> -->
+                            <mat-form-field>
+                                <input matInput formControlName="email">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-md-6">
+                            <mat-icon class="mat-icon-rtl-mirror" svgIcon="briefcase"></mat-icon>
+                            <!-- <h4>{{form.value.designation}}</h4> -->
+                            <mat-form-field>
+                                <input matInput formControlName="designation">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-md-6">
+                            <mat-icon class="mat-icon-rtl-mirror" svgIcon="call"></mat-icon>
+                            <!-- <h4>{{form.value.number}}</h4> -->
+                            <mat-form-field>
+                                <input matInput formControlName="number">
+                            </mat-form-field>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- </mat-card> -->
+            <mat-divider></mat-divider>
+            <!-- <mat-card> -->
+        </form>
+        <mat-card-actions>
+            <div class="social">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="col-md-6">
+                            <div>
+                                <mat-icon class="mat-icon-rtl-mirror" svgIcon="linkedin"></mat-icon>
+                                <a [href]="linkedIn" target="_blank" rel="noopener">
+                                    LinkedIn
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div>
+                                <mat-icon class="mat-icon-rtl-mirror" svgIcon="github"></mat-icon>
+                                <a [href]="git" target="_blank" rel="noopener">
+                                    GitHub
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6">
+                            <div>
+                                <mat-icon></mat-icon>
+                                <a [href]="facebook" target="_blank" rel="noopener">
+                                    Facebook
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6">
+                            <div>
+                                <mat-icon svgIcon="twitter"></mat-icon>
+                                <a [href]="twitter" target="_blank" rel="noopener">
+                                    Twitter
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </mat-card-actions>
+    </mat-card>
+</div>
